@@ -32,4 +32,23 @@ summ = 0
 for i in range(leng):
     if I[i] == 1:
         summ = summ + L[i]
-print(summ)  
+print(summ) 
+
+
+#OR 
+
+Powers = []
+for x in range(31):
+    Powers.append(2**x)
+N = int(input())
+str1 = ""
+while N != 0:
+    digit = N % 10
+    str1 += str(digit)
+    N = N//10
+summ = 0
+leng = len(str1)
+for s in range(leng):
+    if int(str1[s]) == 1:
+        summ = summ + Powers[s]
+print(summ)
