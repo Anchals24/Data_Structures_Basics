@@ -1,4 +1,8 @@
+#Level_Order_Trcversal of a Tree...
 
+#Let's create a node first!
+#Level order traversal can be implemented using queue. 
+#Initially a node has been created which contains the root , it's left child , it's right child...
 
 from collections import deque
 class Node:
@@ -9,6 +13,7 @@ class Node:
 
 class BinaryTree:
     def Level_Order(self , root):
+        #Let's create an empty queue.
         self.Q = deque()
         t = root
         print(t.data)
