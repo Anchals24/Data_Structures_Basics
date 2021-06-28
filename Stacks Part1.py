@@ -1,7 +1,7 @@
 #Implementation of a Stack using Lists 
 
-#In this , I have simply implemented stacks using lists...
-#Step1 : Let's define a class stack....
+"""In this , I have simply implemented stacks using lists...
+#Step1 : Let's define a class stack...."""
 
 class Stack:
     def __init__(self):
