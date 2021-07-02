@@ -45,6 +45,17 @@ class BinaryTree:
             return True
         else:
             return False
+        
+        #Approach 2... using Recursion
+
+    def isIdentical(self,root1, root2):
+        # Code here
+        if root1 == None and root2 == None:
+            return True
+        if root1 != None and root2 != None:
+            return ((root1.data == root2.data) and self.isIdentical(root1.left , root2.left) and self.isIdentical(root1.right , root2.right))
+        return False
+
 BTree = BinaryTree()
 root1 = Node(1)
 root1.left = Node(2)
@@ -58,4 +69,5 @@ root2.right = Node(3)
 #root2.left.right = Node(5)
 
 print(BTree.__identity__(root1 , root2))
+print(BTree.isIdentical(root1 , root2))
 
