@@ -1,0 +1,26 @@
+def helper1(self , root1 , inorder1):
+        if root1 is None:
+            return 
+        self.helper1(root1.left , inorder1)
+        inorder1[root1.data] = 1
+        self.helper1(root1.right , inorder1)
+    
+    def helper2(self , root2 , inorder2):
+        if root2 is None:
+            return 
+        self.helper2(root2.left , inorder2)
+        inorder2.append(root2.data)
+        self.helper2(root2.right , inorder2)
+            
+        
+    def findCommon(self, root1, root2):
+        # code here
+        ans = []
+        inorder1 = {}
+        inorder2 = []
+        self.helper1(root1, inorder1 )
+        self.helper2(root2, inorder2 )
+        for i in inorder2:
+            if i in inorder1:
+                ans.append(i)
+        return ans
