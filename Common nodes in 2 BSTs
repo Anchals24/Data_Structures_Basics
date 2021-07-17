@@ -1,0 +1,28 @@
+#Approach2
+
+def search(self , root2 , key):
+        if root2:
+            if key == root2.data:
+                return True
+            elif key < root2.data:
+                return self.search(root2.left , key)
+            elif key > root2.data:
+                return self.search(root2.right , key)
+        else:
+            return False
+            
+    def inorder1(self , root1 , ans):
+        if root1 is None:
+            return
+        self.inorder1(root1.left , ans)
+        key = root1.data
+        searchh = self.search(root2 , key )
+        if searchh == True:
+            ans.append(key)
+        self.inorder1(root1.right , ans)
+        
+    def findCommon(self, root1, root2):
+        # code here
+        ans = []
+        self.inorder1(root1 , ans)
+        return ans
