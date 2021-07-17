@@ -1,3 +1,6 @@
+
+#Approach1 : Easiest but not the best solution........
+
 def helper1(self , root1 , inorder1):
         if root1 is None:
             return 
