@@ -10,7 +10,7 @@ Such as : put(data) , get() , empty() , qsize()
 
 # Let's begin now.................................................................................................
 
-# Step1 : Firstly , We are going to import Lifoqueue from the queue module!!!
+# Step1 : Firstly , Let us import Lifoqueue from the queue module!!!
 
 """
 
@@ -22,16 +22,16 @@ Stack = LifoQueue()
 # Let's check whether the stack is empty or not.....
 print(Stack.empty())
 
-#Let's now start filling the stack by pushing the elements.
+#Now let's fill the stack by pushing the elements.
 Stack.put(2)
 Stack.put(4)
 Stack.put(1)
 Stack.put(9)
 
-#Let's check now whether the stack is empty or not...........
+#Let's check whether the stack is empty or not...........
 print(Stack.empty())
 
-#Let's pop few the elemenyts now....................
+#Let's pop the few elements now....................
 print(Stack.get())
 print(Stack.get())
 
