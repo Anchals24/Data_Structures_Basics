@@ -10,7 +10,7 @@ Such as : put(data) , get() , empty() , qsize()
 
 # Let's begin now.................................................................................................
 
-# Step1 : Firstly , We are gonna going to import Lifoqueue from the queue module!!!
+# Step1 : Firstly , We are going to import Lifoqueue from the queue module!!!
 
 """
 
