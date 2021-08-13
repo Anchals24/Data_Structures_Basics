@@ -30,16 +30,6 @@ def fib(n):
 		return subproblem1 + subproblem2
 print(fib(int(input())))
 
-#Printing the numbers in incrementing order... 
-""" 0 , 1, 2 , 3..... """
-def inc(n):
-	if n == 0:
-		return
-	else:
-		inc(n-1)
-		print(n)
-inc(7)
-
 #Printing the numbers in decrementing order... 
 
 def decr(n):
@@ -49,6 +39,16 @@ def decr(n):
 		print(n)
 		decr(n-1)
 decr(9)
+
+#Printing the numbers in incrementing order... 
+""" 1, 2 , 3..... """
+def inc(n):
+	if n == 0:
+		return
+	else:
+		inc(n-1)
+		print(n)
+inc(7)
 
 #printing elements in decreasing  and increasing order
 """ 3 2 1 2 3"""
