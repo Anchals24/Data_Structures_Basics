@@ -1,13 +1,13 @@
-#def fact(n):
+def fact(n):
 	#smallest subproblem where we know the answer
-	#if n == 1:
+	if n == 1:
 		#return(1)
-	# recursive assumption
-	#else:
-		#subproblem = fact(n-1)
+	#recursive assumption
+	else:
+		subproblem = fact(n-1)
 	#self work
-		#return n * subproblem
-#print(fact(int(input())))
+		return n * subproblem
+print(fact(int(input())))
 
 
 def fib(n):
@@ -20,7 +20,7 @@ def fib(n):
 		subproblem2 = fib(n-2)
 	#self work
 		return subproblem1 + subproblem2
-#print(fib(int(input())))
+print(fib(int(input())))
 
 def inc(n):
 	if n == 0:
@@ -28,7 +28,7 @@ def inc(n):
 	else:
 		inc(n-1)
 		print(n)
-#inc(7)
+inc(7)
 
 def decr(n):
 	if n == 0:
@@ -36,7 +36,7 @@ def decr(n):
 	else:
 		print(n)
 		decr(n-1)
-#decr(9)
+decr(9)
 
 def incrdecr(n):
 	if n == 1: #what if i will put n == 2 here........ create a tree as well.
@@ -46,7 +46,7 @@ def incrdecr(n):
 		print(n) #self work 1 
 		incrdecr(n-1) #Recursive assumption : incrdecr(n-1) ... 1 ...... incrdecr(n-1)
 		print(n) #self work 2
-#incrdecr(5)
+incrdecr(5)
 
 def cou(n):
 	#base case
@@ -58,4 +58,4 @@ def cou(n):
 		subproblem2 = cou(n-2)
 	#self work
 		return subproblem1 + subproblem2
-#print(cou(0))
+print(cou(0))
