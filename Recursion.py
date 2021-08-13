@@ -15,7 +15,7 @@ def fact(n):
 		return n * subproblem
 print(fact(int(input())))
 
-#Fibonacci of a number...
+#Program2: Fibonacci of a number...
 """ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, …… """
 
 def fib(n):
@@ -30,7 +30,7 @@ def fib(n):
 		return subproblem1 + subproblem2
 print(fib(int(input())))
 
-#Printing the numbers in decrementing order... 
+#Program3: Printing the numbers in decrementing order... 
 
 def decr(n):
 	if n == 0:
@@ -40,7 +40,7 @@ def decr(n):
 		decr(n-1)
 decr(9)
 
-#Printing the numbers in incrementing order... 
+#Program4: Printing the numbers in incrementing order... 
 """ 1, 2 , 3..... """
 def inc(n):
 	if n == 0:
@@ -50,7 +50,7 @@ def inc(n):
 		print(n)
 inc(7)
 
-#printing elements in decreasing  and increasing order
+#Program5: printing elements in decreasing  and increasing order
 """ 3 2 1 2 3"""
 def decrincr(n):
 	if n == 1: #what if i will put n == 2 here........ create a tree as well.
@@ -61,6 +61,22 @@ def decrincr(n):
 		decrincr(n-1) #Recursive assumption : decrincr(n-1) ... 1 ...... decrincr(n-1)
 		print(n) #self work 2
 decrincr(5)
+
+#Program6: Implementing power function
+""" power of 2**3 = 8 """
+
+def power(x , y):
+    #base case
+    if y == 0:
+        return 1
+    elif y == 1:
+        return x
+    #recursive assumption
+    else:
+        subproblem1 = power(x , y-1)
+    #self work
+        return x*subproblem1
+print(power(2,4))
 
 
 
